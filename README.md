@@ -1,6 +1,15 @@
 Gentoo Portage Overlay for the Brackets Code Editor
 ===================================================
 
+Configuration
+-------------
+
+/etc/layman/layman.cfg add:
+
+    overlays: ...
+              https://github.com/gbevan/portage-brackets-bin-overlay/raw/master/repository.xml
+
+layman -a gbevan-brackets
 
 
 
