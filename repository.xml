@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>gbevan-brackets</name>
+    <description lang="en">Brackets Code Editor</description>
+    <homepage>http://github.com/gbevan/portage-brackets-bin-overlay</homepage>
+    <owner type="person">
+      <email>graham.bevan@ntlworld.com</email>
+      <name>Graham Bevan></name>
+    </owner>
+    <source type="git">git://github.com/gbevan/portage-brackets-bin-overlay.git</source>
+    <feed>https://github.com/gbevan/portage-brackets-bin-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
