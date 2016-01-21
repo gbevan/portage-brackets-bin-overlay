@@ -9,9 +9,9 @@ Configuration
     overlays: ...
               https://github.com/gbevan/portage-brackets-bin-overlay/raw/master/repository.xml
 
-layman -a gbevan-brackets
+layman -f -a gbevan-brackets
 
-
+emerge -v --ask brackets-bin
 
 
 Developer Notes:
