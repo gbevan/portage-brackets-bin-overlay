@@ -9,16 +9,22 @@ Configuration
     overlays: ...
               https://github.com/gbevan/portage-brackets-bin-overlay/raw/master/repository.xml
 
+```bash
 layman -f -a gbevan-brackets
 
 emerge -v --ask brackets-bin
+```
 
 Upgrade
 -------
 
+```bash
 layman -S
 
+eix-update
+
 emerge -v --ask -u brackets-bin
+```
 
 Developer Notes:
 ----------------
