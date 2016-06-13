@@ -13,6 +13,12 @@ layman -f -a gbevan-brackets
 
 emerge -v --ask brackets-bin
 
+Upgrade
+-------
+
+layman -S
+
+emerge -v --ask -u brackets-bin
 
 Developer Notes:
 ----------------
