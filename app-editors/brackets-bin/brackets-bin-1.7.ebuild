@@ -47,6 +47,7 @@ RDEPEND="
     net-misc/wget
     chromium? ( www-client/chromium )
     >=app-arch/deb2targz-1-r2
+    x11-themes/adwaita-icon-theme
     "
 DEPEND="sys-devel/binutils"
 

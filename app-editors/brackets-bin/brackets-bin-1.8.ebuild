@@ -6,8 +6,8 @@ EAPI=5
 
 DESCRIPTION="open source code editor for web designers and front-end developers"
 HOMEPAGE="http://brackets.io"
-SRC_URI="amd64?	( https://github.com/adobe/brackets/releases/download/release-${PV}/Brackets.Release.${PV}.64-bit.deb )
-	x86?	( https://github.com/adobe/brackets/releases/download/release-${PV}/Brackets.Release.${PV}.32-bit.deb )"
+SRC_URI="amd64?  ( https://github.com/adobe/brackets/releases/download/release-${PV}/Brackets.Release.${PV}.64-bit.deb )
+  x86?  ( https://github.com/adobe/brackets/releases/download/release-${PV}/Brackets.Release.${PV}.32-bit.deb )"
 
 LICENSE="MIT"
 SLOT="0"
@@ -47,21 +47,22 @@ RDEPEND="
     net-misc/wget
     chromium? ( www-client/chromium )
     >=app-arch/deb2targz-1-r2
+    x11-themes/adwaita-icon-theme
     "
 DEPEND="sys-devel/binutils"
 
 S="${WORKDIR}"
 
 src_unpack() {
-	echo "*** A = ${A}"
-	#unpack ${A}
-	ls -la ${DISTDIR}
-	ln -sf ${DISTDIR}/${A} ${A}
-	ls -la
-	deb2targz ${A} || exit 1
-	rm -f ${A}
-	mv Brackets.Release.${PV}.64-bit.tar.xz data.tar.xz || exit 1
-	echo "*** After unpack ***"
+  echo "*** A = ${A}"
+  #unpack ${A}
+  ls -la ${DISTDIR}
+  ln -sf ${DISTDIR}/${A} ${A}
+  ls -la
+  deb2targz ${A} || exit 1
+  rm -f ${A}
+  mv Brackets.Release.${PV}.64-bit.tar.xz data.tar.xz || exit 1
+  echo "*** After unpack ***"
 }
 
 src_install() {
