@@ -1,6 +1,9 @@
 Gentoo Portage Overlay for the Brackets Code Editor
 ===================================================
 
+**This project is deprecated in favour of the [Brackets-Electron Gentoo Portage Overlay](https://github.com/gbevan/brackets-electron-bin-overlay).**
+
+
 Configuration
 -------------
 
